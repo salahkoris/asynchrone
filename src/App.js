@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useSelector, useDispatch,useStore} from 'react-redux'
 import { fetchUser } from './store/fetchUser';
+import { getUsers } from './store';
 
 
 
@@ -17,7 +18,7 @@ function App() {
       <h1>nom: {nom}</h1>²
       <h1>Email: {email}</h1>
       <hr />
-      <button onClick={()=>{store.dispatch(fetchUser())}}>Charger Données</button>
+      <button onClick={()=>{store.dispatch(getUsers())}}>Charger Données</button>
     </div>
   );
 }
