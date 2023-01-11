@@ -13,9 +13,9 @@ function App() {
   const store=useStore()
   return (
     <div className="App">
-      <h1>Asynchrone exemple</h1>
+      <h1>Asynchrone redux toolkit exemple </h1>
       <hr />
-      <h1>nom: {nom}</h1>²
+      <h1>nom: {nom}</h1>
       <h1>Email: {email}</h1>
       <hr />
       <button onClick={()=>{store.dispatch(getUsers())}}>Charger Données</button>
